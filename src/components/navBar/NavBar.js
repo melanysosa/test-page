@@ -5,15 +5,18 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
 		<div className='header h-96 text-white'>
-			<ul className='flex justify-end p-3'>
-				<Link to='/'>
-					<li className=''>Home | </li>
-				</Link>
+			<Link to='/'>
+				<label className='my-6'>ASSEMBLE'S TEST PAGE </label>
+			</Link>
+			<ul className='flex justify-end  m-6 mx-12'>
 				<Link to='/about'>
-					<li>About</li>
+					<li className='mx-2 tracking-widest'>ABOUT |</li>
+				</Link>
+				<Link to='/ourWork'>
+					<li className='mx-2 tracking-widest'>OUR WORK |</li>
 				</Link>
 				<Link to='/ourServices'>
-					<li>Our Services</li>
+					<li className='mx-2 tracking-widest'>OUR SERVICES </li>
 				</Link>
 			</ul>
 		</div>

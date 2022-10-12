@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.header{
+.header-nav{
   background-image:  url('./assets/headerImage.png') ;
   font-family: 'Lato', sans-serif;
 background-size: cover;
   height: 50vh;
   width: 100vw;
+}
 
-  
+.footer-page{
+  background:#808080;
+  font-family: 'Lato', sans-serif;
+background-size: cover;
+  height: 30%;
+  width: 100vw;
 }

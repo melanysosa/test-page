@@ -1,26 +1,33 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-
+import React from 'react';
+import {useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
-  return (
-		<div className='header h-96 text-white'>
-			<Link to='/'>
-				<label className='my-6'>ASSEMBLE'S TEST PAGE </label>
-			</Link>
-			<ul className='flex justify-end  m-6 mx-12'>
-				<Link to='/about'>
-					<li className='mx-2 tracking-widest'>ABOUT |</li>
-				</Link>
-				<Link to='/ourWork'>
-					<li className='mx-2 tracking-widest'>OUR WORK |</li>
-				</Link>
-				<Link to='/ourServices'>
-					<li className='mx-2 tracking-widest'>OUR SERVICES </li>
-				</Link>
+	const navigate = useNavigate();
+	const toHome = () => navigate('/');
+	const toAbout = () => navigate('/about');
+	const toOurWork = () => navigate('/ourWork');
+	const toOurServices = () => navigate('/ourServices');
+
+	return (
+		<div className='header-nav h-0 w-full text-white grid grid-cols-2 p-12 tracking-widest '>
+			<label onClick={toHome} className=' flex w-1 text-xl'>
+				ASSEMBLE'S TEST PAGE
+			</label>
+			<ul className='flex justify-end '>
+				<li onClick={toAbout} className='mx-2 '>
+					ABOUT |
+				</li>
+
+				<li onClick={toOurWork} className='mx-2 '>
+					OUR WORK |
+				</li>
+
+				<li onClick={toOurServices} className='mx-2 '>
+					OUR SERVICES
+				</li>
 			</ul>
 		</div>
-  );
-}
+	);
+};
 
-export default NavBar
+export default NavBar;

@@ -23,6 +23,7 @@ const Home = () => {
 				pulvinar est in vivamus libero vel facilisi litora ut, blandit nec
 				enim proin auctor diam cum nisi eleifend dictumst urna.
 			</p>
+      
 		</div>
   );
 }

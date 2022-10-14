@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../../components/card/Card';
 import { getApi } from '../../services/getApi';
 
 const OurWork = () => {
@@ -28,15 +29,13 @@ const OurWork = () => {
 			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-12 justify-center items-center'>
 				{!montains
 					? 'Loading...'
-					: montains.map((montain, index) => {
+					: montains.map((montain, id) => {
 							return (
-								<div key={index}>
-									<img
-										src={montain.image}
-										alt='montain'
-										className='h-60 object-cover w-96'
-									/>
-								</div>
+								<Card
+									key={id}
+									src={montain.image}
+									className={'h-60 object-cover w-96'}
+								/>
 							);
 					})}
 			</div>

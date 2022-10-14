@@ -1,8 +1,9 @@
 import React from 'react'
+import Card from '../../components/card/Card';
 
 const Home = () => {
   return (
-		<div className='p-8 m-6'>
+		<div className='p-8 m-6 '>
 			<p className='flex justify-center Lorem ipsum dolor sit amet text-xl font-bold m-6'>
 				Lorem ipsum dolor sit amet.
 			</p>
@@ -23,7 +24,69 @@ const Home = () => {
 				pulvinar est in vivamus libero vel facilisi litora ut, blandit nec
 				enim proin auctor diam cum nisi eleifend dictumst urna.
 			</p>
-      
+			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-12 justify-center items-center'>
+				<Card
+					src={
+						'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Aconcagua2016.jpg/600px-Aconcagua2016.jpg'
+					}
+					className={'h-60 object-cover w-96'}
+				/>
+				<Card
+					src={
+						'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wonder_Lake_and_Denali.jpg/600px-Wonder_Lake_and_Denali.jpg'
+					}
+					className={'h-60 object-cover w-96'}
+				/>
+				<Card
+					src={
+						'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mont-Blanc_from_Planpraz_station.jpg/600px-Mont-Blanc_from_Planpraz_station.jpg'
+					}
+					className={'h-60 object-cover w-96'}
+				/>
+			</div>
+			<div className='grid grid-cols-2 p-12 gap-8'>
+				<div>
+					<p className='text-lg font-bold mb-4 text-solid'>
+						Cnsectatur adipiscing elit.
+					</p>
+					<p className='text-sm mb-2'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Eu non diam phasellus vestibulum lorem sed risus. Eget nulla
+						facilisi etiam dignissim diam quis enim lobortis. Purus in
+						massa tempor nec feugiat nisl pretium fusce id. Vitae congue
+						mauris rhoncus aenean vel elit scelerisque mauris. Est sit
+						amet facilisis magna etiam tempor orci eu lobortis. Lacus vel
+						facilisis volutpat est..
+					</p>
+
+					<p className='text-sm mb-2'>
+						{' '}
+						Lacus luctus accumsan tortor posuere ac. Eget nunc lobortis
+						mattis aliquam faucibus purus in. Tempus egestas sed sed risus
+						pretium quam. Lorem ipsum dolor sit amet. Bibendum neque
+						egestas congue quisque egestas diam. Velit egestas dui id
+						ornare arcu. Id volutpat lacus laoreet non curabitur gravida
+						arcu ac tortor.{' '}
+					</p>
+
+					<p className='text-sm'>
+						{' '}
+						Mi tempus imperdiet nulla malesuada pellentesque elit. Nunc
+						lobortis mattis aliquam faucibus purus in massa. Adipiscing
+						tristique risus nec feugiat in fermentum posuere urna. Mi
+						tempus imperdiet nulla malesuada pellentesque elit eget
+						gravida. Arcu non sodales neque sodales. Aenean sed adipiscing
+						diam donec
+					</p>
+				</div>
+				<Card
+					src={
+						'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/600px-Everest_kalapatthar.jpg'
+					}
+					className={'h-80 object-cover w-full'}
+				/>
+			</div>
 		</div>
   );
 }

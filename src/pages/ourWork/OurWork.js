@@ -25,15 +25,17 @@ const OurWork = () => {
 					</p>
 				</div>
 			</div>
-			<div className='grid grid-cols-3 gap-8'>
+			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-12 justify-center items-center'>
 				{!montains
 					? 'Loading...'
 					: montains.map((montain, index) => {
 							return (
 								<div key={index}>
-									<h1>{montain.title}</h1>
-									<img src={montain.image} alt='montain' />
-									<p>{montain.description}</p>
+									<img
+										src={montain.image}
+										alt='montain'
+										className='h-60 object-cover w-96'
+									/>
 								</div>
 							);
 					})}

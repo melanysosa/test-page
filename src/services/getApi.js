@@ -1,6 +1,9 @@
-const url = 'https://api.nuxtjs.dev/mountains';
+const url = "https://api.nuxtjs.dev/mountains";
 export const getApi = async () => {
   const res = await fetch(url);
-  const resMontains = await res.json();
-	return resMontains;
+  const data = await res.json();
+  console.log(data);
+	return data;
+    
 };
+

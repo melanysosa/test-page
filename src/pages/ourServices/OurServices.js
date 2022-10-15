@@ -6,7 +6,7 @@ const OurServices = () => {
 		{
 			id: 1,
 			title: 'Labore et dolore',
-			info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus. Eget nulla facilisi etiam dignissim diam quis enim lobortis.',
+			info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus. Eget nulla facilisi etiam dignissim diam quis enim lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu non diam phasellus vestibulum lorem sed risus. Eget nulla facilisi etiam dignissim diam quis enim lobortis.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 		},
 		{
 			id: 2,
@@ -20,7 +20,7 @@ const OurServices = () => {
 		},
 	];
 	return (
-		<div className='m-12'>
+		<div className='m-4'>
 			<div>
 				<p className='text-lg font-bold mb-4 '>Our Services</p>
 			</div>

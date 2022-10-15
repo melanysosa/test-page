@@ -12,7 +12,7 @@ const OurWork = () => {
 	}, []);
 	return (
 		<div>
-			<div className='m-12'>
+			<div className='m-4'>
 				<div>
 					<p className='text-lg font-bold mb-4 '>Our Work</p>
 				</div>
@@ -26,7 +26,7 @@ const OurWork = () => {
 					</p>
 				</div>
 			</div>
-			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-12 justify-center items-center'>
+			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-5 justify-center items-center'>
 				{!montains
 					? 'Loading...'
 					: montains.map((montain, id) => {

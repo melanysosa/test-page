@@ -14,7 +14,7 @@ const NavBar = () => {
 	const handleClick = () => setNav(!nav);
 
 	return (
-		<div className='header-nav w-full flex justify-between items-start  text-white top-0 md:p-12 py-3 px-4 tracking-widest '>
+		<div className='header-nav flex justify-between items-start text-white top-0 md:p-12  py-3 px-4 tracking-widest '>
 			<p onClick={toHome} className=' flex w-1 cursor-pointer text-3xl'>
 				ASSEMBLE'S TEST PAGE
 			</p>
@@ -53,21 +53,21 @@ const NavBar = () => {
 
 						<li
 							onClick={toAbout}
-							className='mb-6 cursor-pointer py-6 text-4xl'
+							className='mb-6 cursor-pointer py-6 text-3xl'
 						>
 							ABOUT
 						</li>
 
 						<li
 							onClick={toOurWork}
-							className='mb-6 cursor-pointer py-6 text-4xl'
+							className='mb-6 cursor-pointer py-6 text-3xl'
 						>
 							OUR WORK
 						</li>
 
 						<li
 							onClick={toOurServices}
-							className=' cursor-pointer py-6 text-4xl'
+							className=' cursor-pointer py-6 text-3xl'
 						>
 							OUR SERVICES
 						</li>

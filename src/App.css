@@ -5,7 +5,7 @@
   font-family: 'Lato', sans-serif;
 background-size: cover;
   height: 50vh;
-  width: 100vw;
+ 
 }
 
 .footer-page{
@@ -13,10 +13,7 @@ background-size: cover;
   font-family: 'Lato', sans-serif;
 background-size: cover;
   height: 30%;
-  width: 100vw;
-}
-.mas{
-  color:#65076A;
+  
 }
 .navbar-mobileBg {
 	background: url('./assets/headerMobile.png') no-repeat center center/cover;

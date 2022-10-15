@@ -8,9 +8,9 @@ const Footer = () => {
 	const toPrivacy = () => navigate('/privacy');
 	const toCookies = () => navigate('/cookies');
 	return (
-		<div className='footer-page h-0  text-white flex flex-col sm:flex-row p-12 sm:justify-between tracking-widest '>
-			<div className='flex flex-col items-center sm:items-start'>
-				<p className='flex w-32 sm:w-1 py-4 text-xl'>
+		<div className='footer-page h-0  text-white flex flex-col md:flex-row p-12 sm:justify-between tracking-widest '>
+			<div className='flex flex-col items-center md:items-start'>
+				<p className='flex w-32 md:w-1 py-4 text-xl'>
 					ASSEMBLE'S TEST PAGE
 				</p>
 				<p>Philadelphia, Pensylvania</p>

@@ -3,7 +3,8 @@ import Card from '../../components/card/Card';
 
 const Home = () => {
   return (
-		<div className='grid grid-cols-1 p-4'>
+		<div className='grid grid-cols-1 '>
+			<div className='sm:p-8'>
 			<p className='flex justify-center text-xl font-bold m-6'>
 				Lorem ipsum dolor sit amet.
 			</p>
@@ -24,7 +25,7 @@ const Home = () => {
 				pulvinar est in vivamus libero vel facilisi litora ut, blandit nec
 				enim proin auctor diam cum nisi eleifend dictumst urna.
 			</p>
-			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-3 justify-center items-center'>
+			<div className='grid  grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 my-3 justify-center items-center'>
 				<Card
 					src={
 						'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Aconcagua2016.jpg/600px-Aconcagua2016.jpg'
@@ -44,7 +45,8 @@ const Home = () => {
 					className={'h-60 object-cover w-96'}
 				/>
 			</div>
-			<div className='grid grid-cols-1 p-1  sm:grid-cols-2 sm:p-12 gap-8'>
+			</div>
+			<div className='grid  grid-cols-1 md:grid-cols-2 sm:p-8 '>
 				<div>
 					<p className='text-lg font-bold mb-4 text-solid'>
 						Cnsectatur adipiscing elit.

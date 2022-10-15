@@ -3,8 +3,8 @@ import Card from '../../components/card/Card';
 
 const About = () => {
 	return (
-		<div className=' m-6 '>
-			<div className='grid grid-cols-1 p-1  sm:grid-cols-2 sm:p-12 gap-8'>
+		<div >
+			<div className='grid grid-cols-1  md:grid-cols-2 sm:p-8 gap-8'>
 				<div>
 					<p className='text-lg font-bold mb-4 text-solid'>
 						Cnsectatur adipiscing elit.

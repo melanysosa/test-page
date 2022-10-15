@@ -26,7 +26,7 @@ const OurWork = () => {
 					</p>
 				</div>
 			</div>
-			<div className='grid lg:grid-cols-3 md:grid-cols-2 gap-5 sm:grid-cols-1 m-5 justify-center items-center'>
+			<div className='grid  grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 m-5 justify-center items-center'>
 				{!montains
 					? 'Loading...'
 					: montains.map((montain, id) => {
@@ -37,7 +37,7 @@ const OurWork = () => {
 									className={'h-60 object-cover w-96'}
 								/>
 							);
-					})}
+					  })}
 			</div>
 		</div>
 	);

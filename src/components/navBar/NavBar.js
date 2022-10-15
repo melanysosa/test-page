@@ -14,7 +14,7 @@ const NavBar = () => {
 	const handleClick = () => setNav(!nav);
 
 	return (
-		<div className='header-nav flex justify-between items-start text-white top-0 md:p-12  py-3 px-4 tracking-widest '>
+		<div className='header-nav flex justify-between items-start text-white top-0 md:p-12  py-3 px-4  '>
 			<p onClick={toHome} className=' flex w-1 cursor-pointer text-3xl'>
 				ASSEMBLE'S TEST PAGE
 			</p>

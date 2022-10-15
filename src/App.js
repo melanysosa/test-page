@@ -5,10 +5,10 @@ import RouterApp from './RouterApp';
 
 function App() {
 	return (
-		<div>
-			<NavBar/>
-			<RouterApp/>
-			<Footer/>
+		<div className='tracking-widest'>
+			<NavBar />
+			<RouterApp />
+			<Footer />
 		</div>
 	);
 }

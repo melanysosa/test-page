@@ -3,13 +3,13 @@ import Card from '../../components/card/Card';
 
 const About = () => {
 	return (
-		<div >
-			<div className='grid grid-cols-1  md:grid-cols-2 sm:p-8 gap-8'>
+		<div>
+			<div className='grid grid-cols-1 md:grid-cols-2 md:p-8 gap-8 m-5'>
 				<div>
 					<p className='text-lg font-bold mb-4 text-solid'>
 						Cnsectatur adipiscing elit.
 					</p>
-					<p className='text-sm mb-2'>
+					<p className='text-sm mb-2 font-semibold'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						Eu non diam phasellus vestibulum lorem sed risus. Eget nulla
@@ -20,7 +20,7 @@ const About = () => {
 						facilisis volutpat est..
 					</p>
 
-					<p className='text-sm mb-2'>
+					<p className='text-sm mb-2 font-semibold'>
 						{' '}
 						Lacus luctus accumsan tortor posuere ac. Eget nunc lobortis
 						mattis aliquam faucibus purus in. Tempus egestas sed sed risus
@@ -30,7 +30,7 @@ const About = () => {
 						arcu ac tortor.{' '}
 					</p>
 
-					<p className='text-sm'>
+					<p className='text-sm pb-2 font-semibold'>
 						{' '}
 						Mi tempus imperdiet nulla malesuada pellentesque elit. Nunc
 						lobortis mattis aliquam faucibus purus in massa. Adipiscing
@@ -44,7 +44,7 @@ const About = () => {
 					src={
 						'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/600px-Everest_kalapatthar.jpg'
 					}
-					className={'h-80 object-cover w-full'}
+					className={'h-96 object-cover w-full'}
 				/>
 			</div>
 		</div>

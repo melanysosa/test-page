@@ -15,7 +15,9 @@ const Accordion = ({title,info}) => {
 					)}
 				</button>
 			</div>
-			{showInfo && <p className='md:px-6 py-2'>{info}</p>}
+			{showInfo && (
+				<p className='md:px-6 py-2 font-semibold '>{info}</p>
+			)}
 		</div>
   );
 }

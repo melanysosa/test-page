@@ -1,7 +1,9 @@
 import React from 'react';
 import Accordion from '../../components/accordion/Accordion';
+import useStyles from './useStyles';
 
 const OurServices = () => {
+	const styles = useStyles();
 	const info = [
 		{
 			id: 1,
@@ -20,12 +22,12 @@ const OurServices = () => {
 		},
 	];
 	return (
-		<div className='m-4 md:p-8 '>
+		<div className={styles.containerOurServices}>
 			<div>
-				<p className='text-lg font-bold mb-4 '>Our Services</p>
+				<p className={styles.titleOurServices}>Our Services</p>
 			</div>
 			<div>
-				<p className='text-sm my-4 font-semibold'>
+				<p className={styles.infoOurServices}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
 					non diam phasellus vestibulum lorem sed risus. Eget nulla
@@ -33,7 +35,7 @@ const OurServices = () => {
 					tempor nec feugiat nisl pretium fusce id.
 				</p>
 			</div>
-			<div className='py-14'>
+			<div className={styles.AccordionOurServices}>
 				{info.map((accordion) => {
 					return <Accordion key={accordion.id} {...accordion} />;
 				})}

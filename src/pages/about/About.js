@@ -1,15 +1,19 @@
 import React from 'react';
 import Card from '../../components/card/Card';
+import photo5 from '../../assets/photo5.jpg'
+import useStyles from './useStyles'
 
 const About = () => {
+	const styles= useStyles();
+
 	return (
-		<div>
-			<div className='grid grid-cols-1 md:grid-cols-2 md:p-8 gap-8 m-5'>
+		
+			<div className={styles.containerAbout}>
 				<div>
-					<p className='text-lg font-bold mb-4 text-solid'>
+					<p className={styles.titleAbout}>
 						Cnsectatur adipiscing elit.
 					</p>
-					<p className='text-sm mb-2 font-semibold'>
+					<p className={styles.infoAbout}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						Eu non diam phasellus vestibulum lorem sed risus. Eget nulla
@@ -20,7 +24,7 @@ const About = () => {
 						facilisis volutpat est..
 					</p>
 
-					<p className='text-sm mb-2 font-semibold'>
+					<p className={styles.infoAbout}>
 						{' '}
 						Lacus luctus accumsan tortor posuere ac. Eget nunc lobortis
 						mattis aliquam faucibus purus in. Tempus egestas sed sed risus
@@ -30,7 +34,7 @@ const About = () => {
 						arcu ac tortor.{' '}
 					</p>
 
-					<p className='text-sm pb-2 font-semibold'>
+					<p className={styles.infoAbout}>
 						{' '}
 						Mi tempus imperdiet nulla malesuada pellentesque elit. Nunc
 						lobortis mattis aliquam faucibus purus in massa. Adipiscing
@@ -41,13 +45,11 @@ const About = () => {
 					</p>
 				</div>
 				<Card
-					src={
-						'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/600px-Everest_kalapatthar.jpg'
-					}
-					className={'h-96 object-cover w-full'}
+					src={photo5}
+					className={styles.cardAbout}
 				/>
 			</div>
-		</div>
+		
 	);
 };
 

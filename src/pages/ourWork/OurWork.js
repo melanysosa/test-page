@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../../components/card/Card';
 import { getApi } from '../../services/getApi';
+import useStyles from './useStyles'
 
 const OurWork = () => {
+	const styles = useStyles();
 	const [montains, setMontains] = useState();
 	const fetchApi = () => {
 		getApi().then((montains) => setMontains(montains));
@@ -12,12 +14,12 @@ const OurWork = () => {
 	}, []);
 	return (
 		<div>
-			<div className='m-4 md:p-8'>
+			<div className={styles.containerInfoOurWork}>
 				<div>
-					<p className='text-lg font-bold mb-4 '>Our Work</p>
+					<p className={styles.titleOurWork}>Our Work</p>
 				</div>
 				<div>
-					<p className='text-sm my-4 font-semibold'>
+					<p className={styles.infoOurWork}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						Eu non diam phasellus vestibulum lorem sed risus. Eget nulla
@@ -26,7 +28,7 @@ const OurWork = () => {
 					</p>
 				</div>
 			</div>
-			<div className='grid  grid-cols-1 gap-5 md:grid-cols-3 m-5 justify-center items-center'>
+			<div className={styles.galeryOurWork}>
 				{!montains
 					? 'Loading...'
 					: montains.map((montain, id) => {
@@ -34,9 +36,7 @@ const OurWork = () => {
 								<Card
 									key={id}
 									src={montain.image}
-									className={
-										'h-80 w-full sm:h-60 object-cover md:w-96 '
-									}
+									className={styles.cardOurWork}
 								/>
 							);
 					  })}

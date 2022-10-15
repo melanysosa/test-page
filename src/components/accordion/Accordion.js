@@ -1,25 +1,26 @@
 import React, { useState } from 'react';
-import{AiOutlineMinus,AiOutlinePlus} from "react-icons/ai"
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import useStyle from './useStyles';
 
-const Accordion = ({title,info}) => {
-    const [showInfo,setShowInfo]=useState(false);
-  return (
-		<div className='border-b-2 pb-3 border-[#B9A1BB]'>
-			<div className='flex justify-between items-center my-4'>
-				<p className=' sm:p-0 font-bold'>{title}</p>
-				<button className='flex ' onClick={() => setShowInfo(!showInfo)}>
+const Accordion = ({ title, info }) => {
+	const [showInfo, setShowInfo] = useState(false);
+	const onClickInfo = () => setShowInfo(!showInfo);
+	const style = useStyle();
+	return (
+		<div className={style.containerAccordion}>
+			<div className={style.containerTitleButton}>
+				<p className={style.titleAccordion}>{title}</p>
+				<button  onClick={onClickInfo}>
 					{showInfo ? (
-						<AiOutlineMinus className='text-[#65076A] text-4xl flex ' />
+						<AiOutlineMinus className={style.buttonAccordion} />
 					) : (
-						<AiOutlinePlus className='	text-[#65076A] text-4xl' />
+						<AiOutlinePlus className={style.buttonAccordion} />
 					)}
 				</button>
 			</div>
-			{showInfo && (
-				<p className='md:px-6 py-2 font-semibold '>{info}</p>
-			)}
+			{showInfo && <p className={style.infoAccordion}>{info}</p>}
 		</div>
-  );
-}
+	);
+};
 
-export default Accordion
+export default Accordion;

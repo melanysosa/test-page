@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { FiX } from 'react-icons/fi';
+import useStyles from './useStyles';
 
 const NavBar = () => {
+	const styles = useStyles();
 	const navigate = useNavigate();
 	const toHome = () => navigate('/');
 	const toAbout = () => navigate('/about');
@@ -14,61 +16,49 @@ const NavBar = () => {
 	const handleClick = () => setNav(!nav);
 
 	return (
-		<div className='header-nav flex justify-between items-start text-white top-0 md:p-12  py-3 px-4  '>
-			<p onClick={toHome} className=' flex w-1 cursor-pointer text-3xl'>
+		<div className={styles.containerNav}>
+			<p onClick={toHome} className={styles.titleNav}>
 				ASSEMBLE'S TEST PAGE
 			</p>
-			<div className='flex items-center'>
-				<ul className=' justify-end  hidden md:flex  text-white  text-lg'>
-					<li onClick={toAbout} className='mx-2 cursor-pointer'>
+			<div className={styles.containerMenu}>
+				<ul className={styles.ulMenu}>
+					<li onClick={toAbout} className={styles.liMenu}>
 						ABOUT |
 					</li>
 
-					<li onClick={toOurWork} className='mx-2 cursor-pointer'>
+					<li onClick={toOurWork} className={styles.liMenu}>
 						OUR WORK |
 					</li>
 
-					<li onClick={toOurServices} className='mx-2 cursor-pointer'>
+					<li onClick={toOurServices} className={styles.liMenu}>
 						OUR SERVICES
 					</li>
 				</ul>
 			</div>
 			{/** Hamburguer */}
 			{!nav ? (
-				<div onClick={handleClick} className='md:hidden '>
-					<FaBars className='text-4xl' />
+				<div onClick={handleClick} className={styles.containerFaBars}>
+					<FaBars className={styles.faBars} />
 				</div>
 			) : (
 				<div className='nav-mobile' onClick={handleClick}>
-					<ul className='md:hidden  top-0 left-0 w-full h-screen  flex flex-col   navbar-mobileBg fixed py-0 px-4 '>
-						<div className='flex justify-between w-full py-5 mb-20'>
-							<li
-								onClick={toHome}
-								className=' flex w-1  cursor-pointer text-3xl'
-							>
+					<ul className={styles.containerMenuMobile}>
+						<div className={styles.containerTitleMobile}>
+							<li onClick={toHome} className={styles.titleMenuMobile}>
 								ASSEMBLE'S TEST PAGE
 							</li>
-							<FiX className='text-4xl' />
+							<FiX className={styles.fix} />
 						</div>
 
-						<li
-							onClick={toAbout}
-							className='mb-6 cursor-pointer py-6 text-3xl'
-						>
+						<li onClick={toAbout} className={styles.itemMenuMobile}>
 							ABOUT
 						</li>
 
-						<li
-							onClick={toOurWork}
-							className='mb-6 cursor-pointer py-6 text-3xl'
-						>
+						<li onClick={toOurWork} className={styles.itemMenuMobile}>
 							OUR WORK
 						</li>
 
-						<li
-							onClick={toOurServices}
-							className=' cursor-pointer py-6 text-3xl'
-						>
+						<li onClick={toOurServices} className={styles.itemMenuMobile}>
 							OUR SERVICES
 						</li>
 					</ul>

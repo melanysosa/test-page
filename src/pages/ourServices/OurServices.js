@@ -29,10 +29,9 @@ const OurServices = () => {
 			<div>
 				<p className={styles.infoOurServices}>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
-					non diam phasellus vestibulum lorem sed risus. Eget nulla
-					facilisi etiam dignissim diam quis enim lobortis. Purus in massa
-					tempor nec feugiat nisl pretium fusce id.
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+					ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 			</div>
 			<div className={styles.AccordionOurServices}>

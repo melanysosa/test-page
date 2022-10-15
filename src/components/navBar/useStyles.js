@@ -1,7 +1,7 @@
 const useStyles = () => {
 	return {
 		containerNav:
-			'header-nav flex justify-between items-start text-white top-0 md:p-12  py-3 px-4  ',
+			'flex justify-between items-start text-white top-0 md:p-12  py-3 px-4 header-nav headerNavMobile ',
 		titleNav: ' flex w-1 cursor-pointer text-3xl',
 		containerMenu: 'flex items-center',
 		ulMenu: ' justify-end  hidden md:flex  text-white  text-lg',

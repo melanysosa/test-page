@@ -13,7 +13,7 @@ const OurWork = () => {
 		fetchApi();
 	}, []);
 	return (
-		<div>
+		<div className='md:m-7'>
 			<div className={styles.containerInfoOurWork}>
 				<div>
 					<p className={styles.titleOurWork}>Our Work</p>
@@ -22,9 +22,8 @@ const OurWork = () => {
 					<p className={styles.infoOurWork}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						Eu non diam phasellus vestibulum lorem sed risus. Eget nulla
-						facilisi etiam dignissim diam quis enim lobortis. Purus in
-						massa tempor nec feugiat nisl pretium fusce id.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 				</div>
 			</div>

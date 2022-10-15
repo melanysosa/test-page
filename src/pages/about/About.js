@@ -11,17 +11,14 @@ const About = () => {
 			<div className={styles.containerAbout}>
 				<div>
 					<p className={styles.titleAbout}>
-						Cnsectatur adipiscing elit.
+						About
 					</p>
 					<p className={styles.infoAbout}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						Eu non diam phasellus vestibulum lorem sed risus. Eget nulla
 						facilisi etiam dignissim diam quis enim lobortis. Purus in
-						massa tempor nec feugiat nisl pretium fusce id. Vitae congue
-						mauris rhoncus aenean vel elit scelerisque mauris. Est sit
-						amet facilisis magna etiam tempor orci eu lobortis. Lacus vel
-						facilisis volutpat est..
+						massa tempor nec feugiat nisl pretium fusce id. 
 					</p>
 
 					<p className={styles.infoAbout}>
@@ -30,8 +27,7 @@ const About = () => {
 						mattis aliquam faucibus purus in. Tempus egestas sed sed risus
 						pretium quam. Lorem ipsum dolor sit amet. Bibendum neque
 						egestas congue quisque egestas diam. Velit egestas dui id
-						ornare arcu. Id volutpat lacus laoreet non curabitur gravida
-						arcu ac tortor.{' '}
+						ornare arcu. {' '}
 					</p>
 
 					<p className={styles.infoAbout}>
@@ -40,8 +36,7 @@ const About = () => {
 						lobortis mattis aliquam faucibus purus in massa. Adipiscing
 						tristique risus nec feugiat in fermentum posuere urna. Mi
 						tempus imperdiet nulla malesuada pellentesque elit eget
-						gravida. Arcu non sodales neque sodales. Aenean sed adipiscing
-						diam donec
+						gravida. 
 					</p>
 				</div>
 				<Card
